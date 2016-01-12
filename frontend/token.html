@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Invaites</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    
+    <div id="message" style="display:none">There is an error.</div>
+    
+    <script type="text/javascript">
+        var r = /token=([a-f0-9]+)/.exec(window.location.href);
+        if ( r !== null )
+        {
+            window.opener.App.models.settings.set("user.token", r[1]);
+            //window.close();
+            console.log(r[1]);
+        }
+        else
+        {
+            var m = /error=([^&]+)/.exec(window.location.href);
+            if ( m !== null )
+            {
+                document.getElementById("message").innerText = m[1];
+            }
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+    
+</body>
+</html>

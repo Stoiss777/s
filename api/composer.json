@@ -1,0 +1,5 @@
+{
+    "require": {
+        "rediska/rediska": "0.5.10"
+    }
+}

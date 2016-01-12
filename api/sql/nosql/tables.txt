@@ -1,0 +1,5 @@
+<?php
+
+'auth:settings' - настройки для index страницы авторизации, см Auth\Controllers\Index.php
+
+'auth:codes:code' - коды авторизации для последующего обмена на токен. имеют малый ttl

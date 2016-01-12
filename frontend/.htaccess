@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# HTML5 pushstate (history) support:
+RewriteCond %{THE_REQUEST} ^.*/index.html
+RewriteRule ^(.*)index.html$ $1 [R,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/index\.html
+RewriteRule (.*) index.html

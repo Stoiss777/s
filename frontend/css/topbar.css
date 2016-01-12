@@ -1,0 +1,78 @@
+div.topbar
+{
+    font: 14pt/42pt Roboto, arial, sans-serif;
+    height: 42pt;
+    background-color: #DC301C;
+    width: 100%;
+}
+
+div.topbar div
+{
+    float: left;
+}
+
+div.topbar div.logo
+{
+    width: 76pt;
+}
+
+div.topbar ul.menu
+{
+    float: left;
+    list-style: none;
+    height: 100%;
+    margin: 0;
+}
+
+div.topbar ul.menu li
+{
+    position: relative;
+    float: left;
+    cursor: pointer;
+    height: 100%;
+}
+
+div.topbar ul.menu li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+}
+
+div.topbar ul.menu li a:hover
+{
+    color: #DEDEDE;
+    text-decoration: underline;
+}
+
+
+div.topbar ul.user
+{
+    float: right;
+    list-style: none;
+    height: 100%;
+    margin: 0 20pt;
+}
+
+div.topbar ul.user li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+}
+
+div.topbar ul.user li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+}
+
+div.topbar ul.user li a:hover
+{
+    color: #DEDEDE;
+    text-decoration: underline;
+}
